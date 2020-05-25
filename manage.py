@@ -28,10 +28,10 @@ Question.objects.all()
 
 # Django provides a rich database lookup API that's entirely driven by
 # keyword arguments.
- Question.objects.filter(id=1)
-<QuerySet [<Question: What's up?>]>
+ Question.objects.filter(id=1) 
+<QuerySet [<Question: How do you feel>]>
  Question.objects.filter(question_text__startswith='What')
-<QuerySet [<Question: What's up?>]>
+<QuerySet [<Question: What's your story?]>
 
 # Get the question that was published this year.
  from django.utils import timezone
